@@ -1,8 +1,8 @@
 
-# randomBytes
+# HTTPError
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-Random Bytes function. Works in nodejs and browser.
+HTTPError class.
 
 <br />
 
@@ -16,7 +16,7 @@ Random Bytes function. Works in nodejs and browser.
 ## Install
 
 ```console
-npm i @neumatter/random-bytes 
+npm i @neumatter/http-error 
 ```
 
 <br />
@@ -25,26 +25,11 @@ npm i @neumatter/random-bytes
 ## Usage
 
 
-### sync:
-
+### uses:
 ```js
-import randomBytes from '@neumatter/random-bytes'
+import HTTPError from '@neumatter/http-error'
 
-const byteView = randomBytes(32)
-// ...use byteView
-```
-
-
-### callback:
-
-```js
-import randomBytes from '@neumatter/random-bytes'
-
-randomBytes(32, (err, byteView) => {
-  if (err) {
-    console.error(err)
-  } else {
-// ...use byteView
-  }
-})
+throw new HTTPError(404, 'not found')
+throw new HTTPError(404)
+throw new HTTPError('not found')
 ```
