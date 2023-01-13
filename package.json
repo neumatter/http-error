@@ -1,0 +1,26 @@
+{
+  "name": "@neumatter/http-error",
+  "version": "1.0.0",
+  "description": "HTTPError class.",
+  "type": "module",
+  "author": "Cal Young",
+  "keywords": [
+    "http",
+    "error",
+    "class",
+    "nodejs",
+    "string",
+    "javascript",
+    "module",
+    "node",
+    "es6"
+  ],
+  "main": "./index.js",
+  "types": "./types/index.d.ts",
+  "standard": {
+    "parser": "@babel/eslint-parser",
+    "ignore": [
+      "/types"
+    ]
+  }
+}
